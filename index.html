@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LAPTOPS — Flagship Laptops From Around the World</title>
+<meta name="description" content="LAPTOPS is a premium showcase of flagship laptops from every corner of the planet — 28 legendary machines from 9 countries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"><span class="orb orb-a"></span><span class="orb orb-b"></span><span class="grain"></span></div>
+
+<nav class="nav" id="nav">
+  <a class="wordmark" href="#top">LAPTOPS<span class="dot">.</span></a>
+  <div class="nav-links">
+    <a href="#atlas">Brands</a>
+    <a href="#countries">Countries</a>
+    <a href="#about">About</a>
+  </div>
+  <button class="nav-cta" id="navExplore">Explore</button>
+</nav>
+
+<header class="hero" id="top">
+  <p class="eyebrow reveal">The World Collection &mdash; Vol. I</p>
+  <h1 class="hero-title reveal">LAPTOPS<br><em>of the World</em></h1>
+  <p class="hero-sub reveal">Twenty-eight flagship machines from nine countries &mdash; the finest laptops on Earth, curated into one premium gallery. From Cupertino&rsquo;s silicon to Tokyo&rsquo;s featherweights.</p>
+  <div class="stats reveal">
+    <div class="stat"><span class="stat-num" data-count="28">0</span><span class="stat-label">Flagship brands</span></div>
+    <div class="stat"><span class="stat-num" data-count="9">0</span><span class="stat-label">Countries</span></div>
+    <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Continents</span></div>
+    <div class="stat"><span class="stat-num" data-count="0.68">0</span><span class="stat-label">Lightest, in kg*</span></div>
+  </div>
+  <div class="hero-ctas reveal">
+    <a href="#atlas" class="btn btn-gold">Explore the collection</a>
+    <a href="#countries" class="btn btn-ghost">Browse by country</a>
+  </div>
+  <p class="scroll-hint">Scroll</p>
+</header>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marqueeTrack"></div></div>
+
+<div class="filterbar" id="filterbar">
+  <div class="filter-inner">
+    <input type="search" id="search" placeholder="Search brands, models, countries&hellip;" autocomplete="off">
+    <select id="countryFilter"><option value="">All countries</option></select>
+    <select id="categoryFilter">
+      <option value="">All categories</option>
+      <option>Ultrabook</option><option>Gaming</option><option>Creator</option>
+      <option>Business</option><option>Modular</option><option>Rugged &amp; Linux</option>
+    </select>
+    <span class="result-count" id="resultCount"></span>
+  </div>
+</div>
+
+<main id="atlas"></main>
+
+<section class="countries" id="countries">
+  <p class="eyebrow">Passport</p>
+  <h2 class="section-title">Nine countries.<br><em>One obsession.</em></h2>
+  <div class="country-grid" id="countryGrid"></div>
+</section>
+
+<section class="about" id="about">
+  <p class="eyebrow">About this collection</p>
+  <h2 class="section-title">Curated, not scraped.</h2>
+  <p class="about-copy">Every machine in this gallery is the flagship of its maker &mdash; the laptop each brand is proudest of. Specs reflect top configurations at the time of curation and evolve as new generations launch. This is a showcase, not a store: no prices, no carts, just the machines.</p>
+  <p class="about-copy dim">* Lightest machine in the collection: the Fujitsu Lifebook UH-X at 689&nbsp;g.</p>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <p class="foot-mark">LAPTOPS<span class="dot">.</span></p>
+    <p class="foot-note">Made by MeowSamOP DZN &mdash; a love letter to the machines we carry everywhere.</p>
+    <p class="foot-legal">All brand names, models and trademarks belong to their respective owners. Specs are indicative flagship configurations and may change.</p>
+  </div>
+  <button class="to-top" id="toTop" aria-label="Back to top">&uarr;</button>
+</footer>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal-card" role="dialog" aria-modal="true" id="modalCard"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
